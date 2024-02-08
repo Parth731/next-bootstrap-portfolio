@@ -1,4 +1,6 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import Header from "@/components/Header";
+import { Html, Head, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 export default function Document() {
   return (
@@ -7,7 +9,8 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
+        {/* <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script> */}
       </body>
     </Html>
-  )
+  );
 }
